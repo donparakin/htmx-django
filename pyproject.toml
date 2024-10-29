@@ -1,0 +1,40 @@
+[project]
+name = "htmx-django"
+version = "0.1.0"
+authors = [
+    { name="Don Parakin", email="don@weaddvalue.ca" },
+]
+description = "Extensions for using HTMX (or Unpoly or Ajaxial or htmz) with Django."
+keywords = ["django", "htmx", "unpoly", "python"]
+license = {file = "LICENSE"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+    "Framework :: Django",
+    "Framework :: HTMX",
+    "Framework :: Unpoly",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/donparakin/htmx-django"
+Issues = "https://github.com/donparakin/htmx-django/issues"
+Documentation = "https://htmx-django.readthedocs.io"
+Repository = "https://github.com/donparakin/htmx-django.git"
+# Changelog = "https://github.com/me/spam/blob/master/CHANGELOG.md"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+#[pypi]
+#username = "__token__"
+
+#[tool.flit.sdist]
+# include = ["doc/"]
+#exclude = ["docs/", "x-dev/"]

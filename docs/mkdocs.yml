@@ -1,0 +1,19 @@
+
+site_name: htmx-django Python Package
+site_description: Extensions for using HTMX (or Unpoly or Ajaxial or htmz) with Django.
+site_author: Don Parakin
+repo_url: https://github.com/donparakin/htmx-django
+
+theme:
+  name: readthedocs
+  highlightjs: true
+
+nav:
+  - 'Home': 'index.md'
+#  - 'Install': 'install.md'
+#  - 'Configure': 'configure.md'
+#  - 'More':
+#    - 'A Pinch of Python': 'python.md'
+
+#-----------------------------------------------------------------------
+# Ref: https://www.mkdocs.org/user-guide/writing-your-docs/
