@@ -2,8 +2,7 @@
 
 Extensions for using [HTMX](https://htmx.org/)
 (or [Unpoly](https://unpoly.com/)
-or [Ajaxial](https://ajaxial.unmodernweb.com/)
-or [htmz](https://leanrada.com/htmz/))
+or [Alpine-AJAX](https://alpine-ajax.js.org/))
 with [Django](https://www.djangoproject.com/).
 
 By abstracting HTMX (and friends) just a wee bit more than packages like 
@@ -11,6 +10,11 @@ By abstracting HTMX (and friends) just a wee bit more than packages like
 htmx-django does not need additional packages like
 [django-template-partials](https://github.com/carltongibson/django-template-partials)
 to provide a complete HTMX &amp; Django workflow.
+
+htmx-django is simple and lightweight:
+Nothing needs to be added to INSTALLED_APPS or to MIDDLEWARE.
+In most cases, your Django code does not have even mention HTMX (or Unpoly or Alpine-AJAX).
+htmx-django differentiates between full-page and fragment requests for you.
 
 If you have a small brain like me,
 you might enjoy the simplicity of htmx-django.

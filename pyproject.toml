@@ -4,15 +4,13 @@ version = "0.1.0"
 authors = [
     { name="Don Parakin", email="don@weaddvalue.ca" },
 ]
-description = "Extensions for using HTMX (or Unpoly or Ajaxial or htmz) with Django."
+description = "Extensions for using HTMX (or Unpoly or Alpine-AJAX) with Django."
 keywords = ["django", "htmx", "unpoly", "python"]
 license = {file = "LICENSE"}
 classifiers = [
     "Intended Audience :: Developers",
     "Topic :: Software Development",
     "Framework :: Django",
-    "Framework :: HTMX",
-    "Framework :: Unpoly",
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent",
     "License :: OSI Approved :: MIT License",
@@ -31,6 +29,36 @@ Repository = "https://github.com/donparakin/htmx-django.git"
 [build-system]
 requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
+
+[tool.uv]
+dev-dependencies = [
+    "django>=4.2.16",
+    "flit>=3.9.0",
+    "ruff>=0.7.1",
+]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+select = [
+    "ALL", # include all the rules, including new ones
+]
+ignore = [
+    # Ref: https://docs.astral.sh/ruff/rules/
+    "ANN", # flake8-annotations
+    "COM", # flake8-commas
+    "C90", # mccabe complexity
+    "DJ",  # django
+    "EXE", # flake8-executable
+    "T10", # debugger
+    "TID", # flake8-tidy-imports
+    "D",   # missing doc strings
+]
+[tool.ruff.lint.per-file-ignores]
+    "__init__.py" = ["E402", "F402"]
+[tool.ruff.format]
+indent-style = "space"
+quote-style = "double"
 
 #[pypi]
 #username = "__token__"

@@ -1,6 +1,6 @@
 
 site_name: htmx-django Python Package
-site_description: Extensions for using HTMX (or Unpoly or Ajaxial or htmz) with Django.
+site_description: Extensions for using HTMX (or Unpoly or Alpine-AJAX) with Django.
 site_author: Don Parakin
 repo_url: https://github.com/donparakin/htmx-django
 
